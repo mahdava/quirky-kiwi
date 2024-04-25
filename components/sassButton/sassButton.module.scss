@@ -1,7 +1,7 @@
 @mixin button-styles($button-bg-color, $button-text-color: "white") {
   background-color: $button-bg-color;
   color: $button-text-color;
-  @apply p-4 rounded block;
+  @apply p-4 rounded;
 }
 
 .button-default {

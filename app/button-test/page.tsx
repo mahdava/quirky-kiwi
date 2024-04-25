@@ -7,13 +7,19 @@ export default function ButtonPage() {
         <h1 className="mb-4 font-bold text-lg">
           Buttons that work with Sass and @mixin
         </h1>
-        <p>Check components/sassButton to see how they work</p>
+        <p>
+          Check{" "}
+          <mark className="inline-block p-1 rounded-sm bg-orange-300">
+            `components/sassButton`
+          </mark>{" "}
+          to see how they work
+        </p>
         <section className="pb-4 border-b-2 border-gray-500">
           <h2>
             Simple buttons example that leverages on default mixin settings
           </h2>
-          <SassButton className="block">Hello, I am a simple button</SassButton>
-          <SassButton className="mt-4" variant="cancel">
+          <SassButton>Hello, I am a simple button</SassButton>
+          <SassButton className="ml-4" variant="cancel">
             Me too!
           </SassButton>
         </section>
