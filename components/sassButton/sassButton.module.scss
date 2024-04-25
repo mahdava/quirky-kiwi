@@ -1,0 +1,20 @@
+@mixin button-styles($button-bg-color, $button-text-color: "white") {
+  background-color: $button-bg-color;
+  color: $button-text-color;
+  @apply p-4 rounded block;
+}
+
+.button-default {
+  // here you can pass the background color
+  // text color will use the default from the @mixin
+  @include button-styles(blue);
+}
+
+.button-alert {
+  // here you can pass both background color and text color
+  @include button-styles(orange, black);
+}
+
+.button-cancel {
+  @include button-styles(#ff0000);
+}
