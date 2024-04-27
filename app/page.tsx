@@ -2,8 +2,8 @@ import SassButton from "@/components/sassButton/sassButton";
 
 export default function ButtonPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
+    <main>
+      <div className="p-4">
         <h1 className="mb-4 font-bold text-lg">
           Buttons that work with Sass and @mixin
         </h1>
@@ -19,7 +19,7 @@ export default function ButtonPage() {
             Simple buttons example that leverages on default mixin settings
           </h2>
           <SassButton>Hello, I am a simple button</SassButton>
-          <SassButton className="ml-4" variant="cancel">
+          <SassButton className="block mt-4" variant="cancel">
             Me too!
           </SassButton>
         </section>
